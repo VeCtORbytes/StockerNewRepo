@@ -26,9 +26,7 @@ root.render(
          <BrowserRouter>
  <NavBar/>
  <AuthProvider>
-    <App />
- </AuthProvider>
- <Routes>
+    <Routes>
   <Route path="/" element={<HomePage />} />
   <Route path="/login" element={<Login />} />
   <Route path="/signup" element={<Signup />} />
@@ -40,6 +38,8 @@ root.render(
  
   <Route path="/*" element={< NotFound/>} />
   </Routes>
+ </AuthProvider>
+ 
   <Footer/>
  </BrowserRouter>
     </CookiesProvider>
