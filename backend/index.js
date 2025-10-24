@@ -3,12 +3,13 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const authRoute = require("./Routes/AuthRoute");
 
 // Resolved Conflict 1: Kept a single declaration for HoldingModel
-const { HoldingModel } = require('./model/HoldingModel');
+const { HoldingModel } = require("./model/HoldingModel");
 const { PositionModel } = require("./model/PositionModel");
 const { OrdersModel } = require("./model/OrderModel");
 
